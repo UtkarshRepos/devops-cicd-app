@@ -6,6 +6,6 @@ app.get('/', (req, res) => {
   res.send('Hello from GitHub Actions Pipeline V1 ✅');
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`App running on http://localhost:${PORT}`);
 });
