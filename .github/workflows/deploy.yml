@@ -29,7 +29,7 @@ jobs:
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ubuntu
-          key: ${{ secrets.EC2_KEY }}
+          key: ${{ secrets.HOST_SSH_KEY }}
           script: |
             docker stop my-node-app || true
             docker rm my-node-app || true
